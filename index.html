@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation Page</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <!--
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+-->
+<div class="gridCont">
+  <nav id="navbar">
+    <header id="header">
+      <h2>CSS-Grid Reference</h2>
+    </header>
+
+    <a class="nav-link" href="#Why_Learn_Grid?">Why Learn Grid?</a>
+
+    <a class="nav-link" href="#What_you_will_learn_in_this_guide">What you will learn in this guide</a>
+    <a class="nav-link" href="#What_about_flexbox?">What about flexbox?</a>
+    <a class="nav-link" href="#Grid_Basics">Grid Basics</a>
+    <a class="nav-link" href="#Advanced_Grid_Techniques">Advanced Grid Techniques</a>
+    <img class="tiny" src="https://cdn.lynda.com/course/622088/622088-636395205780173900-16x9.jpg">
+  </nav>
+  <div id="main-doc">
+    <h1>CSS-Grid is your friend</h1>
+    <section id="Why_Learn_Grid?" class="main-section">
+      <header>
+        <h2>Why Learn Grid?</h2>
+      </header>
+      <p>Grid is not new. It was recommended for adoption in 2011. It is without a doubt the most revolutiary thing to hit CSS since flexbox. You have already waited too long to learn it.
+      </p>
+      <p>Grid is you friend. It wants to make your life easier so you can chill more. It wants your sites to be so pretty and gridy that people will click your ads just to say thanks for the amazing UI.
+      </p>
+      <p>
+        Grid makes writing CSS and HTML feel way more like programing and way less like churning out websites.
+        <br> Learning grid will help you:
+        <ol>
+          <li>be more confident</li>
+          <li>be ready for whatever madness 2019 brings</li>
+          <li>become a layout demigod</li>
+          <li>understand shoptalk show</li>
+          <li>write respectable code</li>
+        </ol>
+      </p>
+
+    </section>
+    <section id="What_you_will_learn_in_this_guide" class="main-section">
+      <header>
+        <h2>What you will learn in this guide</h2>
+
+      </header>
+      <p>Think of this as a 'bare-bones' grid tutorial. What is the absolute minimum you can learn about grid and use it to build layouts? This is the approach I take.</p>
+      <p>
+        As with numerous things in CSS, there are a few ways to declare grid layouts. Instead of exhaustivly running through each and every way, I'll just point you at a few simple straightforward ways.
+      </p>
+    </section>
+    <section id="What_about_flexbox?" class="main-section">
+      <header>
+        <h2>What about flexbox?</h2>
+      </header>
+      <p>
+        Grid doesn't replace flexbox. I love flexbox. Grid loves flexbox. They play nicely together and each fill a different role in achieving responsive and spectacular layouts.
+      </p>
+      <p>
+        I still use flexbox. You'll still use it too. But grid is the fastest and best way to structure an HTML document. Your flexboxes are dying to be dropped into a nice grid where they can thrive.
+      </p>
+    </section>
+    <section id="Grid_Basics" class="main-section">
+      <header>
+        <h2>Grid Basics</h2>
+      </header>
+      <p>Let's get this party started shall we?</p>
+      <blockquote><code>body{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  display: grid;<br>
+&nbsp;&nbsp;&nbsp;      }</code></blockquote>
+      <p>Too easy? Gotta start somewhere, eh. Ok, lets go deeper.</p>
+      <blockquote>
+        <code>
+        body{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  display: grid;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="red"> grid: 1fr / 200px 1fr;</span><br>
+   &nbsp;&nbsp;&nbsp;   }
+      </code>
+      </blockquote>
+      <p>What is exactly going on with this grid property? It always helps to know what you're looking at. This is CSS for the site you're viewing right now!!! Nice twist there, eh? Basically the syntax is saying this: rows / columns.</p>
+      <p>
+        This page is rocking a two column layout. It achieves this by defining the first column as <code>200px</code> wide, for the nav bar. Then throwing the rest to the article. Using <code>1fr</code> specifies the fraction of the remaining space to
+        be delegated to the unit.
+      </p>
+
+    </section>
+    <section id="Advanced_Grid_Techniques" class="main-section">
+      <header>
+        <h2>Advanced Grid Techniques</h2>
+      </header>
+      <p>
+        The real power of grid is unleashed with the last property I will share with you here. <br> GRID TEMPLATE AREAS!
+        <blockquote>
+          <code>
+        body{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  display: grid;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  grid: 1fr / 200px 1fr;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="red">grid-template-areas: "nav article";</span><br>
+   &nbsp;&nbsp;&nbsp;   }<br><br>
+         nav{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="red">grid-area: "nav";</span><br>
+    
+   &nbsp;&nbsp;&nbsp;   }<br><br>
+         main{<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <span class="red">grid-area: "article";</span><br>
+    
+   &nbsp;&nbsp;&nbsp;   }
+      </code>
+        </blockquote>
+      <p>
+        The grid container's grid-template-areas declaration is in itself a visualization of how the grid will appear. The elements within the container choose where they'll be displayed. This page uses a media query to be a top bar on phones and small screens
+        and a left-side bar on larger displays.
+      </p>
+      <p>Go build something! When you get stuck find more info <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">here</a></p>
+    </section>
+    <a target="_blank" href="www.okiwebdesign.us">&copy; Tom Landis - 2018</a>
+  </div>
+</div>
+  
+  
+
+</body>
+
+</html>
