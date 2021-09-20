@@ -12,7 +12,7 @@
 nav{
   text-align:center;
   display:flex;
-  grid-area: "nav";
+  grid-area: nav;
   flex-direction:column;
   border-right: 3px solid black;
   position: fixed;
